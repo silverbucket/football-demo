@@ -39,7 +39,7 @@ body {
  */
 .navbar {
   z-index: 1000;
-  background-color: rgba(255,255,255,255);
+  background-color: rgba(255,255,255,0);
   min-width: 300px;
   max-height: 120px;
   min-height: 12s0px;
@@ -91,7 +91,7 @@ body {
   transition: 1s;
 }
 .alert {
-  background-color: rgba(255,255,255,255);
+  background-color: rgba(255,255,255,0);
   border: none;
   margin: 0 auto 0 auto;
   padding: 0 5px 0 5px;
@@ -120,7 +120,7 @@ body {
   bottom: 0;
   overflow-y: auto;
   z-index: 1000;
-  background-color: rgba(250,250,250,255);
+  background-color: rgba(250,250,250,0);
   padding: 0 !important;
 }
 .logo-bar {
@@ -159,10 +159,10 @@ body {
 }
 .gradient {
   height: 100%;
-  background: -webkit-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,.8)); /*Safari 5.1-6*/
-  background:    -moz-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,.8)); /*Fx 3.6-15*/
-  background:      -o-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,.8)); /*Opera 11.1-12*/
-  background:         linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,.8)); /*Standard*/
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,.2)); /*Safari 5.1-6*/
+  background:    -moz-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,.2)); /*Fx 3.6-15*/
+  background:      -o-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,.2)); /*Opera 11.1-12*/
+  background:         linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,.2)); /*Standard*/
 }
 .loading-header {
   text-align: center;
