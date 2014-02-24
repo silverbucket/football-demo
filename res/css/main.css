@@ -42,7 +42,7 @@ body {
   background-color: rgba(255,255,255,255);
   min-width: 300px;
   max-height: 120px;
-  min-height: 120px;
+  min-height: 12s0px;
   margin: 0;
 }
 .navbar-brand {
@@ -217,7 +217,7 @@ body {
  * CONTENT
  */
 .content-container {
-  padding: 0 5% 0 5%;
+  padding: 20px 5% 0 5%;
   margin-top: 0;
 }
 
