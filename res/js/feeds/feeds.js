@@ -431,8 +431,8 @@ function ($q, SH, CH, RS, $rootScope, $sce) {
     // RS.call('feeds', 'getAll', ['']).then(function (feeds) {
     //   console.log('Feeds: got feed urls from remoteStorage ', feeds);
       var default_feed = {
-        url: 'https://football-demo.5apps.com/feed.atom',
-        md5: 'b6f24edd1c7c0faa011daafdd95193ff'
+        url: 'https://football-demo.5apps.com/atom.xml',
+        md5: '93b6e7c60217c8546caf451c64a5f71f'
       };
       var feeds = {};
       feeds[default_feed.md5] = {
