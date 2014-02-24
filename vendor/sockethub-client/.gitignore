@@ -1,0 +1,7 @@
+*~
+\#*
+.#*
+*.swp
+node_modules/
+doc/*
+example/simple/config.js

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>dogfeed - remoteStorage callback endpoint</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div id="remotestorage-connect"></div>
+    <!-- build:js /vendor/remotestorage.min.js -->
+    <script type="text/javascript" src="vendor/remotestorage/remotestorage.min.js?v=0.8.3"></script>
+    <!-- endbuild -->
+    <!-- build:js /vendor/remotestorage-modules.min.js -->
+    <script type="text/javascript" src="vendor/remotestorage/remotestorage-sockethub.js?v=0.2.6"></script>
+    <script type="text/javascript" src="vendor/remotestorage/remotestorage-feeds.js?v=0.2.6"></script>
+    <script type="text/javascript" src="vendor/remotestorage/remotestorage-articles.js?v=0.2.6"></script>
+    <!-- endbuild -->
+    <script>
+(function initRemoteStorage() {
+  //remoteStorage.claimAccess({ sockethub:'rw', feeds:'rw', articles:'rw' });
+  remoteStorage.access.claim('sockethub', 'rw');
+  remoteStorage.access.claim('feeds', 'rw');
+  remoteStorage.access.claim('articles', 'rw');
+  // remoteStorage.caching.disable('/sockethub/');
+  // remoteStorage.caching.disable('/feeds/');
+  // remoteStorage.caching.disable('/articles/');
+  remoteStorage.displayWidget('remotestorage-connect', {
+    redirectUri: window.location.origin + '/rscallback.html'
+  });
+})();
+setTimeout(function rsConnect() {
+  if (remoteStorage.remote.connected) {
+    //console.log('rs connected, reloading to ' + baseUrl + "/");
+    window.location = "/";
+  } else {
+    console.log('waiting for rs to connect');
+    setTimeout(rsConnect, 1000);
+  }
+}, 1000);
+    </script>
+  </body>
+</html>
