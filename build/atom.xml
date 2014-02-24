@@ -3,7 +3,7 @@
 <id>https://football-demo.5apps.com/atom.xml</id>
 <title>ABC News</title>
 <subtitle>Official News of ABC Football Club</subtitle>
-<logo>https://football-demo.5apps.com/res/img/news.svg</logo>
+<logo>https://football-demo.5apps.com/res/img/news.png</logo>
 <updated>2013-05-28T12:00:00.000Z</updated>
 <author>
  <activity:object-type>http://activitystrea.ms/schema/1.0/person</activity:object-type>
