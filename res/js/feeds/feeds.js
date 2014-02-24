@@ -431,13 +431,12 @@ function ($q, SH, CH, RS, $rootScope, $sce) {
     // }, 1000);
     // RS.call('feeds', 'getAll', ['']).then(function (feeds) {
     //   console.log('Feeds: got feed urls from remoteStorage ', feeds);
-      var default_feed = {
-        url: 'https://football-demo.5apps.com/atom.xml',
-        md5: '93b6e7c60217c8546caf451c64a5f71f'
-      };
       var feeds = {};
-      feeds[default_feed.md5] = {
-        url: default_feed.url
+      feeds['93b6e7c60217c8546caf451c64a5f71f'] = {
+        url: 'https://football-demo.5apps.com/atom.xml'
+      };
+      feeds['8d3509b8578578e07f5cfd73e5ddd3c9'] = {
+        url: 'http://www.soccerindiana.org/feeds/story/atom/'
       };
 
       for (var key in feeds) {
