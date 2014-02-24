@@ -3,12 +3,13 @@
     <p>no feeds yet, add some!</p>
   </div><!--/span-->
 
-  <div>
-    <a class="col-xs-6 col-sm-4 col-md-2 col-lg-2 feed-tile" href="/#/contacts">
-      <div class="feed-title-loading" ng-show="false">
+  <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 feed-tile"
+       style="background: url('/res/img/contacts.png') no-repeat center center;">
+    <a href="/#/contacts">
+      <div class="feed-tile-loading" ng-show="false">
       </div>
-      <div class="feed-title-info" style="margin: 50px auto;">
-        <span>Contact Information</span>
+      <div class="feed-tile-info">
+        <span class="feed-title-text">Contact Information</span>
       </div>
     </a>
   </div>
@@ -38,16 +39,5 @@
       <span class="feed-title-text" ng-bind="f.name"></span>
     </div>
   </div><!--/span-->
-
-  <div>
-    <a class="col-xs-6 col-sm-4 col-md-2 col-lg-2 feed-tile add-feed" href="/#/feeds/add">
-      <div class="feed-title-loading" ng-show="false">
-      </div>
-      <div class="feed-title-info" style="margin: 50px auto;">
-        <span style="margin-left: 10px;" class="glyphicon glyphicon-plus"></span>
-        <span >Add a Feed</span>
-      </div>
-    </a>
-  </div>
 
 </div><!--/row-->
