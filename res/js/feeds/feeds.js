@@ -153,40 +153,7 @@ function ($q, SH, CH, RS, $rootScope, $sce) {
   /****
    * FEED MANAGEMENT
    ******************/
-  // grab whatever feeds exists in remoteStorage right away
-  (function getFeedUrls() {
-    setTimeout(function () {
-      $rootScope.$broadcast('message', {
-        message: 'fetching feeds from remoteStorage',
-        title: 'Info',
-        type: 'info',
-        timeout: false
-      });
-    }, 1000);
-    RS.call('feeds', 'getAll', ['']).then(function (feeds) {
-      console.log('Feeds: got feed urls from remoteStorage ', feeds);
-      for (var key in feeds) {
-        if ((!feeds[key]) || ((typeof feeds[key].url === 'undefined') &&
-                             (typeof feeds[key].address === 'undefined'))) {
-          console.log('ERROR processing url['+key+']: ', feeds[key]);
-        } else {
-          feeds[key].url = (feeds[key].url) ? feeds[key].url : feeds[key].address;
-          feeds[key].unread = 0;
-          func.updateFeed(feeds[key]);
-          func.fetchFeed(feeds[key].url); // asign existing feed info to data struct
-        }
-      }
-      data.state.remoteStorage = true;
-    }, function (err) {
-      console.log('error: unable to get feed list from remoteStorage: ', err);
-      $rootScope.$broadcast('message', {
-        message: 'unable to get feed list from remotestorage',
-        type: 'error',
-        timeout: false
-      });
-      data.state.remoteStorage = true;
-    }); 
-  })();
+
 
   /**
    * Function: _saveFeed
@@ -447,9 +414,53 @@ function ($q, SH, CH, RS, $rootScope, $sce) {
       data.info[key].oldestFetched = m.object.datenum;
     }
 
-
     _addArticle(m);
   });
+
+
+  // grab whatever feeds exists in remoteStorage right away
+  (function getFeedUrls() {
+    // setTimeout(function () {
+    //   $rootScope.$broadcast('message', {
+    //     message: 'fetching feeds from remoteStorage',
+    //     title: 'Info',
+    //     type: 'info',
+    //     timeout: false
+    //   });
+    // }, 1000);
+    // RS.call('feeds', 'getAll', ['']).then(function (feeds) {
+    //   console.log('Feeds: got feed urls from remoteStorage ', feeds);
+      var default_feed = {
+        url: 'https://football-demo.5apps.com/feed.atom',
+        md5: 'b6f24edd1c7c0faa011daafdd95193ff'
+      };
+      var feeds = {};
+      feeds[default_feed.md5] = {
+        url: default_feed.url
+      };
+
+      for (var key in feeds) {
+        if ((!feeds[key]) || ((typeof feeds[key].url === 'undefined') &&
+                             (typeof feeds[key].address === 'undefined'))) {
+          console.log('ERROR processing url['+key+']: ', feeds[key]);
+        } else {
+          feeds[key].url = (feeds[key].url) ? feeds[key].url : feeds[key].address;
+          feeds[key].unread = 0;
+          func.updateFeed(feeds[key]);
+          func.fetchFeed(feeds[key].url); // asign existing feed info to data struct
+        }
+      }
+      data.state.remoteStorage = true;
+    // }, function (err) {
+    //   console.log('error: unable to get feed list from remoteStorage: ', err);
+    //   $rootScope.$broadcast('message', {
+    //     message: 'unable to get feed list from remotestorage',
+    //     type: 'error',
+    //     timeout: false
+    //   });
+    //   data.state.remoteStorage = true;
+    // }); 
+  })();
 
   return {
     config: config,

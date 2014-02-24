@@ -31,14 +31,14 @@
   </div><!--/span-->
 
   <div>
-  <a class="col-xs-6 col-sm-4 col-md-2 col-lg-2 feed-tile add-feed" href="/#/feeds/add">
-    <div class="feed-title-loading" ng-show="false">
-    </div>
-    <div class="feed-title-info" style="margin: 50px auto;">
-      <span style="margin-left: 10px;" class="glyphicon glyphicon-plus"></span>
-      <span >Add a Feed</span>
-    </div>
-  </a>
+    <a class="col-xs-6 col-sm-4 col-md-2 col-lg-2 feed-tile add-feed" href="/#/feeds/add">
+      <div class="feed-title-loading" ng-show="false">
+      </div>
+      <div class="feed-title-info" style="margin: 50px auto;">
+        <span style="margin-left: 10px;" class="glyphicon glyphicon-plus"></span>
+        <span >Add a Feed</span>
+      </div>
+    </a>
   </div>
 
 </div><!--/row-->

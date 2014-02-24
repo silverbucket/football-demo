@@ -18,6 +18,7 @@ body {
  * REMOTESTORAGE WIDGET
  */
 #remotestorage-widget {
+  display: none;
   position: fixed !important;
   top: 3px !important;
   right: 20px !important;
@@ -151,9 +152,17 @@ body {
   bottom: 0;
   /*overflow-y: auto;
   overflow-x: hidden;*/
-  background-color: white;
+  background: white;
+  background-image: url('/res/img/tweed.png');
   z-index: 1500;
   padding: 0 !important;
+}
+.gradient {
+  height: 100%;
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,.8)); /*Safari 5.1-6*/
+  background:    -moz-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,.8)); /*Fx 3.6-15*/
+  background:      -o-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,.8)); /*Opera 11.1-12*/
+  background:         linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,.8)); /*Standard*/
 }
 .loading-header {
   text-align: center;

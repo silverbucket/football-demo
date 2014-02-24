@@ -128,7 +128,7 @@ function ($rootScope, RS, $timeout) {
   if (!RS.isConnected()) {
     $timeout(function () {
       if (!RS.isConnected()) {
-        $rootScope.$broadcast('message', {message: 'remotestorage-connect', timeout: false});
+        //$rootScope.$broadcast('message', {message: 'remotestorage-connect', timeout: false});
       }
     }, 3000);
   }

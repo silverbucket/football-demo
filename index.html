@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>dogfeed</title>
+    <title>football demo</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,7 +42,7 @@
 
       <!-- main content area -->
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 opposite-sidebar">
-
+      <div class="gradient">
         <div id="remotestorage-connect" ng-controller="remoteStorageCtrl"></div>
 
         <nav class="navbar" role="navigation" ng-controller="titlebarCtrl">
@@ -60,7 +60,6 @@
                 <li class="main-link" ng-class="class('home')"><a href="/#/"><span class="glyphicon glyphicon-home"></span></a></li>
                 <li class="main-link" ng-class="class('add')"><a href="/#/feeds/add"><span class="glyphicon glyphicon-plus"></span></a></li>
                 <li class="main-link" ng-class="class('settings-sockethub')"><a href="/#/settings/sockethub"><span class="glyphicon glyphicon-cog"></span></a></li>
-                <li class="main-link" ng-class="class('about')"><a href="/#/about"><span class="glyphicon glyphicon-info-sign"></span></a></li>
               </ul>
             </div>
           </div>
@@ -72,15 +71,15 @@
 
         <div class="content-container" ng-view></div>
 
-      </div><!--/span-->
-
-    </div><!--/row-->
+      </div>
+      </div>
+    </div>
 
 
     <script type="text/ng-template" id="loading.html">
       <div class="text loading-page">
         <div class="loading-header">
-          <img class="loading-image" src="/res/img/dogfeed-icon.svg" />
+          <img class="loading-image" src="/res/img/football.svg" />
         </div>
         <div class="text-content">
         </div>
@@ -92,9 +91,10 @@
       <div class="text">
         <div class="row">
           <div class="col-xs-12">
-            <span class="dogfeed-logo-large"></span>
+            <h1>ABC Football Club</h1>
           </div>
         </div>
+        
         <div class="row">
           <div class="col-xs-12">
             <div class="text-content">

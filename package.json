@@ -1,15 +1,15 @@
 {
-  "name": "Dogfeed",
-  "description": "an unhosted RSS reader",
+  "name": "Football Demo",
+  "description": "example of multi-platform community application",
   "version": "0.3.5",
   "private": false,
   "author": "Nick Jennings <nick@silverbucket.net>",
   "license": "AGPL",
   "repository": {
     "type": "git",
-    "url": "git://github.com/silverbucket/dogfeed.git"
+    "url": "git://github.com/silverbucket/football-demo.git"
   },
-  "homepage": "http://github.com/silverbucket/dogfeed",
+  "homepage": "http://github.com/silverbucket/football-demo",
   "devDependencies": {
     "grunt": "*",
     "grunt-contrib-uglify": "~0.2.2",
