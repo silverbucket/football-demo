@@ -25,7 +25,7 @@
         <div ng-repeat="m in article.media"
              class="article-audio">
           <audio controls ng-src="{{ m.url }}" type="{{ m.type }}">
-            Your browser does not s``port the audio element.
+            Your browser does not support the audio element.
           </audio>
         </div>
       </div>

@@ -196,24 +196,25 @@ function ($q, SH, CH, RS, $rootScope, $sce) {
     // clean urls for angularjs security
     trustMedia(a);
     var url = a.link || a.object.link;
+    func.updateArticle(a);
 
     //
     // see if we can fetch article to get previously set read status
-    return RS.call('articles', 'getByUrl', [url]).then(function (_a) {
-      if ((typeof _a === 'object') && (typeof _a.read === 'boolean')) {
-        //console.log('ARTICLE FETCH from RS: ', a);
-        a.read = (_a.read) ? _a.read : false;
+    // return RS.call('articles', 'getByUrl', [url]).then(function (_a) {
+    //   if ((typeof _a === 'object') && (typeof _a.read === 'boolean')) {
+    //     //console.log('ARTICLE FETCH from RS: ', a);
+    //     a.read = (_a.read) ? _a.read : false;
 
-        if (a.read) {
-          // this article is read, subtract from total
-          data.info[key].unread = (typeof data.info[key].unread === "number") ? data.info[key].unread - 1 : 0;
-        }
-      }
-      func.updateArticle(a);
-    }, function (e) {
-      //console.log("ARTICLE FETCH ERROR: ", e);
-      func.updateArticle(a);
-    });
+    //     if (a.read) {
+    //       // this article is read, subtract from total
+    //       data.info[key].unread = (typeof data.info[key].unread === "number") ? data.info[key].unread - 1 : 0;
+    //     }
+    //   }
+    //   func.updateArticle(a);
+    // }, function (e) {
+    //   //console.log("ARTICLE FETCH ERROR: ", e);
+    //   func.updateArticle(a);
+    // });
   }
 
   
@@ -349,7 +350,7 @@ function ($q, SH, CH, RS, $rootScope, $sce) {
     var defer = $q.defer();
     var name = url;
     if (typeof data.info[url] !== 'undefined') {
-      name = data.info[url].name;
+      name = data.info[url].name || url;
       data.info[url].loaded = false;
     }
     $rootScope.$broadcast('message', {type: 'info', message: 'fetching articles from '+name});
@@ -377,7 +378,7 @@ function ($q, SH, CH, RS, $rootScope, $sce) {
   // detect when new articles are received from Sockethub
   //
   SH.on('feeds', 'message', function (m) {
-    //console.log("Feeds received message ",m);
+    console.log("sockethub.feeds incoming object: ",m);
     var key = m.actor.address;
 
     if (!m.status) {
