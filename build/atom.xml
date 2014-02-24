@@ -2,7 +2,7 @@
 <feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:georss="http://www.georss.org/georss" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:media="http://purl.org/syndication/atommedia" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:ostatus="http://ostatus.org/schema/1.0">
 <id>https://football-demo.5apps.com/atom.xml</id>
 <title>Club News</title>
-<subtitle>Official News of ABC Football Club</subtitle>
+<subtitle>Official News of Frozen Penguin FC</subtitle>
 <logo>https://football-demo.5apps.com/res/img/news.png</logo>
 <updated>2013-05-28T12:00:00.000Z</updated>
 <author>
@@ -14,31 +14,64 @@
 <entry>
  <activity:object-type>http://activitystrea.ms/schema/1.0/comment</activity:object-type>
  <id>https://football-demo.5apps.com/articles/goal-of-the-month.html</id>
- <title>Goal of the Month!</title>
+ <title>12yr old Somalian boy scores Goal of the Month!</title>
  <link rel="alternate" type="text/html" href="https://football-demo.5apps.com/articles/goal-of-the-month.html"/>
  <activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
  <published>2013-05-28T12:00:00.000Z</published>
  <updated>2013-05-28T12:00:00.000Z</updated>
  <georss:point>10.20 104.0</georss:point>
-</entry>
+ <content type='xhtml'>
+   
+<div xmlns='http://www.w3.org/1999/xhtml'>
+<p>During his peak years in the seventies of the previous century, Dutch soccer player Johan Cruyff was one of the world's most talented soccer players - often described as a poet dancing with the ball at his feet. Dazzling footwork combined with what can only be described as a remarkably unstyled hippie haircut made him a household name across the world for decades. So much, that in 2001 Dig and Alison Nbuusi from Boholgaras, 40kms east of Dollow in South Central Somalia, named their oldest son Johan Nbuusi, engifting the child with a hard to pronounce name tied to a tough act to follow in the world of soccer. </p>
+ 
+<p>Nbuusi, now twelve year old, decided he could beat the odds of becoming yet another kid in the ghetto named after a famous sports person to end up nowhere. He has been training for 21 hours per day ever since he could walk age one, and is determined to to become the worlds next Cruyff. And he seems to be getting results. Nbuusi does some exciting things on the field very few players can pull off. Effortlessly he performs double-spin after double-spin as he drags the ball back behind himself while pivoting around another player.</p>
+
+<p>The talented young player has been making headlines internationally, bringing fame and a lot of fans to the Frozen Penguins FC Stadium. Johan has now added his 25th 'Goal of the Month' in less than two years to his name with a bullet of a shot during the recent match against Froyo Gouda. So far, the budding starlet has been modest about his success, though French newspaper Le Monde has offered him 25 million and a life time supply of ice cream to write his life story. "Thousands of youngsters are in my position", says the boy, "so I need to work harder".</p> </div></content>
+
+   </entry>
 <entry>
  <activity:object-type>http://activitystrea.ms/schema/1.0/comment</activity:object-type>
  <id>https://football-demo.5apps.com/articles/amazing-comeback-wins-it-3-2.html</id>
- <title>Amazing Comeback Wins it 3 - 2</title>
+ <title>Hell freezes over - Ice bears wins 3 - 2</title>
  <link rel="alternate" type="text/html" href="https://football-demo.5apps.com/articles/amazing-comeback-wins-it-3-2.html"/>
  <activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
  <published>2013-05-21T12:00:00.000Z</published>
  <updated>2013-05-21T12:00:00.000Z</updated>
  <georss:point>10.20 104.0</georss:point>
+ 
+  <content type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>
+    <p>The polar bear (Ursus maritimus) is a carnivorous ball artist whose native range lies largely within the Arctic Circle, encompassing the Arctic Ocean, its surrounding seas and surrounding land masses. It is a large bear that likes to play center and sometimes a real goal-getter. After games and a few drinks is has approximately the same temper as the omnivorous Kodiak bear (Ursus arctos middendorffi). A boar (adult male) weighs around 350/700 kg, while a sow (adult female) is about half that size. Both are pretty bad at soccer.</p>
+    
+    <p>Although it is the sister species of the brown bear, it has evolved to occupy a narrower ecological niche, with many body characteristics adapted for cold temperatures, for moving across snow, ice, and open water, and for hunting the seals which make up most of its diet. Although most polar bears are born on land, they spend most of their time at sea. Their scientific name means "maritime bear", and derives from this fact. Polar bears hunt their preferred food of seals from the edge of sea ice, often living off fat reserves when no sea ice is present.</p>
+
+ <p>The polar bear is classified as a vulnerable species, with eight of the nineteen polar bear subpopulations in decline.[7] For decades, large scale hunting raised international concern for the future of the species but populations rebounded after controls and quotas began to take effect.[citation needed] For thousands of years, the polar bear has been a key figure in the material, spiritual, and cultural life of Arctic indigenous peoples, and polar bears remain important in their cultures.</p>
+</div></content>
+ 
 </entry>
 <entry>
  <activity:object-type>http://activitystrea.ms/schema/1.0/comment</activity:object-type>
  <id>https://football-demo.5apps.com/articles/welcome-new-coach.html</id>
- <title>Welcome New Coach</title>
+ <title>Soccer legend Fifi joins as New Coach</title>
  <link rel="alternate" type="text/html" href="https://football-demo.5apps.com/articles/welcome-new-coach.html"/>
  <activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
  <published>2013-05-14T12:00:00.000Z</published>
  <updated>2013-05-14T12:00:00.000Z</updated>
  <georss:point>10.20 104.0</georss:point>
+ 
+ 
+  <content type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>
+
+ <p>French soccer legend Fifi arrived Wednesday at the North Pole, vowing to transform our team to be world champions.</p>
+
+ <p>The five-time world footballer of the year was greeted by hundreds of cheering Frozen Penguin fans upon landing, where he appeared wearing a red scarf around his neck. The football idol was seen smiling as supporters gathered to chant his name and dance traditional Inuit dances around him.</p>
+
+ <p>"I love working with poodles," Sports International quoted Fifi as saying after his arrival."</p>
+
+ <p>"I'm not going to occupy myself with politics. I'll concentrate on sport and try and put some pleasure back into people's lives there," the 23-year-old international said during training in Kazachstan.</p> 
+  
+</div></content>
+ 
+  
 </entry>
 </feed>
