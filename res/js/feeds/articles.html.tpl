@@ -77,10 +77,12 @@
 
       <h2>{{ a.title }}</h2>
 
-      <span class="article-view-icon glyphicon"
-            ng-class="{'glyphicon-chevron-right': (!a.read), 'glyphicon-minus': (a.read)}"></span>
 
-      <span rel="{{ a.date }}"><i>{{ a.date | fromNow}}</i></span>
+      <div style="display:block;">
+        <span class="article-view-icon glyphicon"
+              ng-class="{'glyphicon-chevron-right': (!a.read), 'glyphicon-minus': (a.read)}"></span>
+        <span rel="{{ a.date }}"><i>{{ a.date | fromNow}}</i></span>
+      </div>
     </div>
   </div>
 
