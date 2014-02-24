@@ -1,0 +1,40 @@
+<?xml version="1.0"?><svg width="793.7007874015749" height="1122.5196850393702" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <title>News Paper with lines</title>
+ <defs>
+  <linearGradient id="linearGradient220">
+   <stop stop-color="#ffffff" offset="0" id="stop221"/>
+   <stop stop-color="#efefef" offset="0.845528" id="stop224"/>
+   <stop stop-color="#a2a2a2" offset="1" id="stop222"/>
+  </linearGradient>
+  <linearGradient id="linearGradient216">
+   <stop stop-color="#505050" offset="0" id="stop217"/>
+   <stop stop-color="#bfbfbf" offset="1" id="stop218"/>
+  </linearGradient>
+  <linearGradient y2="-0.002669" y1="0.952161" xlink:href="#linearGradient216" x2="0.514529" x1="0.518166" id="linearGradient921"/>
+  <linearGradient y2="0.986983" y1="-0.01574" xlink:href="#linearGradient220" x2="0.496776" x1="0.503259" id="linearGradient922"/>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <path fill="url(#linearGradient922)" fill-rule="evenodd" stroke="#000000" stroke-width="16.638073" stroke-miterlimit="4" id="path30" d="m150.622086,101.481323c-0.000183,-0.000175 -93.102173,276.756561 -90.989464,333.801331c2.112862,57.044861 59.273125,54.593689 59.273125,54.593689l564.134659,0c0,0 57.160095,2.451172 59.273132,-54.593689c2.112732,-57.044769 -90.989624,-333.801506 -90.989441,-333.801331l-500.702011,0z"/>
+  <path fill="url(#linearGradient921)" fill-rule="evenodd" stroke="#555555" stroke-width="16.638073" stroke-miterlimit="4" id="path33" d="m392.492981,240.405334l-242.968765,0c0,0 -44.368088,111.976929 -42.255417,150.006683c2.112732,38.029846 25.353287,33.804443 25.353287,33.804443l259.870895,0l0,-183.811127z"/>
+  <g id="svg_2">
+   <text font-size="7.195248" font-style="normal" font-weight="bold" fill="#000000" stroke-width="1.0000000pt" font-family="Bitstream Vera Sans" text-anchor="start" y="528.501709" xml:space="preserve" x="503.859773" transform="matrix(23.0084, 0, -6.30181, 16.6381, -8134.28, -8590.84)" id="text46">N</text>
+   <text font-size="7.195248" font-style="normal" font-weight="bold" fill="#000000" stroke-width="1.0000000pt" font-family="Bitstream Vera Sans" text-anchor="start" y="528.621948" xml:space="preserve" x="437.203701" transform="matrix(23.0084, 0, -3.15091, 16.6381, -8134.28, -8590.84)" id="text460">
+    <tspan font-family="Bitstream Vera Sans" y="528.50177" x="437.3074" id="tspan461">E</tspan>
+   </text>
+   <text transform="matrix(23.0084, 0, 0, 16.6381, -8134.28, -8590.84)" font-size="7.195248" font-style="normal" font-weight="bold" fill="#000000" stroke-width="1.0000000pt" font-family="Bitstream Vera Sans" text-anchor="start" y="528.640256" xml:space="preserve" x="381.078338" id="text463">
+    <tspan font-family="Bitstream Vera Sans" y="528.3999" x="370.13919" id="tspan464">WS</tspan>
+   </text>
+  </g>
+  <text xml:space="preserve" text-anchor="middle" font-family="Bitstream Vera Sans" font-size="7.195248" id="svg_3" y="164.480347" x="149.299194" stroke-width="1.0000000pt" fill="#000000"/>
+  <text transform="matrix(25.9374, 0, 0, 8.75775, -10660.7, -1678.89)" xml:space="preserve" text-anchor="middle" font-family="Bookman Old Style" font-size="16.476259" id="svg_5" y="235.480347" x="432.299194" stroke-width="1.0000000pt" stroke="#000000" fill="#000000"/>
+  <text transform="matrix(301.454, 0, 0, 101.776, -135499, -26246.9)" xml:space="preserve" text-anchor="middle" font-family="Verdana" font-size="1.001" id="svg_23" y="261.480347" x="451.299194" stroke-width="1.0000000pt" stroke="#666666" fill="#000000"/>
+  <text transform="matrix(248.545, 0, 0, 45.3275, -137195, -14174.7)" xml:space="preserve" text-anchor="middle" font-family="Verdana" font-size="1.001" id="svg_24" y="320.480347" x="554.299194" stroke-width="1.0000000pt" stroke="#666666" fill="#000000"/>
+  <line opacity="0.2" id="svg_25" y2="250.480347" x2="659.298931" y1="250.480347" x1="439.298921" stroke-width="4.638073" stroke="#000000" fill="none"/>
+  <line id="svg_27" opacity="0.2" y2="269.480193" x2="660.297359" y1="269.480193" x1="440.29735" stroke-width="4.638073" stroke="#000000" fill="none"/>
+  <line id="svg_28" opacity="0.2" y2="288.480193" x2="661.297359" y1="288.480193" x1="441.29735" stroke-width="4.638073" stroke="#000000" fill="none"/>
+  <line id="svg_29" opacity="0.2" y2="311.480193" x2="661.297359" y1="311.480193" x1="441.29735" stroke-width="4.638073" stroke="#000000" fill="none"/>
+  <line id="svg_31" opacity="0.2" y2="336.48004" x2="661.299694" y1="336.48004" x1="441.299684" stroke-width="4.638073" stroke="#000000" fill="none"/>
+  <line id="svg_32" opacity="0.2" y2="362.48004" x2="660.299694" y1="362.48004" x1="440.299684" stroke-width="4.638073" stroke="#000000" fill="none"/>
+ </g>
+</svg>
