@@ -3,6 +3,15 @@
     <p>no feeds yet, add some!</p>
   </div><!--/span-->
 
+  <div>
+    <a class="col-xs-6 col-sm-4 col-md-2 col-lg-2 feed-tile" href="/#/contacts">
+      <div class="feed-title-loading" ng-show="false">
+      </div>
+      <div class="feed-title-info" style="margin: 50px auto;">
+        <span>Contact Information</span>
+      </div>
+    </a>
+  </div>
   <div ng-repeat="f in feeds.infoArray | orderBy: 'name' track by $index"
        class="col-xs-6 col-sm-4 col-md-2 col-lg-2 feed-tile"
        title="{{ f.url }}"

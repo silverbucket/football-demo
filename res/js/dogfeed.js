@@ -32,8 +32,8 @@ function ($routeProvider, $locationProvider) {
     when('/feeds/:feed/article/:article', {
       templateUrl: '/res/views/articles.html'
     }).
-    when('/about', {
-      templateUrl: 'about.html'
+    when('/contacts', {
+      templateUrl: 'contacts.html'
     }).
     otherwise({
       redirectTo: "/"
@@ -238,6 +238,32 @@ function ($scope, $rootScope, settings, RS) {
       });
     }
   });
+}]).
+
+/**
+ * controller: contactsCtrl
+ */
+controller('contactsCtrl',
+['$scope',
+function ($scope) {
+
+  $scope.contacts = [
+    {
+      name: 'John Doe',
+      title: 'Head Coach',
+      number: '123456789'
+    },
+    {
+      name: 'Katherine Lundquist',
+      title: 'Goalie Coach',
+      number: '8881924445'
+    },
+    {
+      name: 'Fredrick Hanzel',
+      title: 'Team Physician',
+      number: '2282819191'
+    }
+  ];
 }]).
 
 controller('mainCtrl', ['$scope', 'RS', 'SH', '$timeout', '$rootScope', '$routeParams', 'Feeds',
