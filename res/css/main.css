@@ -6,12 +6,20 @@ body {
   padding: 0;
   min-width: 300px;
   overflow-x: hidden; /* Prevent scroll on narrow devices */
+  font-family: 'norwester';
 }
 html {
   overflow-y: auto; /* Prevent scroll on narrow devices */
 }
 body {
   /*padding-top: 75px !important;*/
+}
+
+
+@font-face {
+  font-family: 'norwester';
+  src: url('/res/fonts/norwester.ttf');
+       url('/res/fonts/norwester.eot');
 }
 
 /*
