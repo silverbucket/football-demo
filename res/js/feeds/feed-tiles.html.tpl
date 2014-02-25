@@ -31,7 +31,7 @@
       <div class="feed-tile-loading" ng-show="false">
       </div>
       <div class="feed-tile-info">
-        <span class="feed-title-text">Calendar</span>
+        <span class="feed-title-text">Upcoming Games</span>
       </div>
   </div>
     </a>
