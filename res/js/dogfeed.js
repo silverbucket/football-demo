@@ -35,6 +35,12 @@ function ($routeProvider, $locationProvider) {
     when('/contacts', {
       templateUrl: 'contacts.html'
     }).
+    when('/scores', {
+      templateUrl: 'scores.html'
+    }).
+    when('/calendar', {
+      templateUrl: 'calendar.html'
+    }).
     otherwise({
       redirectTo: "/"
     });
@@ -263,6 +269,63 @@ function ($scope) {
       title: 'Team Physician',
       number: '2282819191'
     }
+  ];
+}]).
+
+/**
+ * controller: scoresCtrl
+ */
+controller('scoresCtrl',
+['$scope',
+function ($scope) {
+
+  $scope.scores = [
+    {date: '22-02-2014',time:'13:00',game:'ST Saens/ZZZ C1 - Yellow Purple C1G',score:'2 - 1'},
+    {date: '22-02-2014',time:'12:30',game:'Womble D2 - Yellow Purple D2',score:'6 - 1'},
+    {date: '22-02-2014',time:'11:30',game:'Union E1 - Yellow Purple E1',score:'8 - 1'},
+    {date: '22-02-2014',time:'11:00',game:'Vile \'30 D2 - Yellow Purple D4',score:'1 - 4'},
+    {date: '22-02-2014',time:'10:15',game:'Yellow Purple F7 - SCE F4',score:'1 - 0'},
+    {date: '22-02-2014',time:'10:00',game:'Sleep 2G - Yellow Purple E5',score:'4 - 4'},
+    {date: '22-02-2014',time:'9:00',game:'SCD \'33 F1 - Yellow Purple F6M',score:'6 - 1'},
+    {date: '22-02-2014',time:'0:00',game:'Yellow Purple E3 - WVW E2',score:'3 - 2'},
+    {date: '22-02-2014',time:'0:00',game:'Millars SC E2 - Yellow Purple E2',score:'4 - 3'},
+    {date: '16-02-2014',time:'14:00',game:'Yellow Purple VR1 - Hoboken VR1',score:'2 - 3'},
+    {date: '16-02-2014',time:'14:00',game:'Yellow Purple 1 - SML 1',score:'3 - 2'},
+    {date: '16-02-2014',time:'12:00',game:'Yellow Purple 7 - Trojans 3',score:'2 - 1'},
+    {date: '16-02-2014',time:'12:00',game:'Yellow Purple 7 - Trojans 3',score:'2 - 1'},
+    {date: '16-02-2014',time:'11:30',game:'Yellow Purple 2 - GVA 2',score:'4 - 0'},
+    {date: '16-02-2014',time:'11:00',game:'VMS \'12 3 - Yellow Purple 4',score:'2 - 5'},
+    {date: '16-02-2014',time:'11:00',game:'Trix \'31 2 - Yellow Purple 3',score:'6 - 1'},
+    {date: '16-02-2014',time:'9:45',game:'Alternate 5 - Yellow Purple 8',score:'1 - 1'},
+    {date: '16-02-2014',time:'9:45',game:'Alternate 5 - Yellow Purple 8',score:'1 - 1'},
+    {date: '16-02-2014',time:'9:30',game:'Yellow Purple 5 - Union 2',score:'2 - 1'}
+  ];
+}]).
+
+controller('calendarCtrl',
+['$scope',
+function ($scope) {
+
+  $scope.calendar = [
+{date:'29-02-2014',time:'13:00',game:'ST Saens/ZZZ C1 - Yellow Purple C1G'},
+{date:'29-02-2014',time:'12:30',game:'Womble D2 - Yellow Purple D2'},
+{date:'29-02-2014',time:'11:30',game:'Union E1 - Yellow Purple E1'},
+{date:'29-02-2014',time:'11:00',game:'Vile \'30 D2 - Yellow Purple D4'},
+{date:'29-02-2014',time:'0:00',game:'Yellow Purple E3 - WVW E2'},
+{date:'29-02-2014',time:'0:00',game:'Millars SC E2 - Yellow Purple E2'},
+{date:'07-03-2014',time:'14:00',game:'Yellow Purple VR1 - Hoboken VR1'},
+{date:'07-03-2014',time:'14:00',game:'Yellow Purple 1 - SML 1'},
+{date:'29-02-2014',time:'10:15',game:'Yellow Purple F7 - SCE F4'},
+{date:'29-02-2014',time:'10:00',game:'Sleep 2G - Yellow Purple E5'},
+{date:'29-02-2014',time:'9:00',game:'SCD \'33 F1 - Yellow Purple F6M'},
+{date:'07-03-2014',time:'12:00',game:'Yellow Purple 7 - Trojans 3'},
+{date:'07-03-2014',time:'12:00',game:'Yellow Purple 7 - Trojans 3'},
+{date:'07-03-2014',time:'11:30',game:'Yellow Purple 2 - GVA 2'},
+{date:'07-03-2014',time:'11:00',game:'VMS \'12 3 - Yellow Purple 4'},
+{date:'07-03-2014',time:'11:00',game:'Trix \'31 2 - Yellow Purple 3'},
+{date:'07-03-2014',time:'9:45',game:'Alternate 5 - Yellow Purple 8'},
+{date:'07-03-2014',time:'9:45',game:'Alternate 5 - Yellow Purple 8'},
+{date:'07-03-2014',time:'9:30',game:'Yellow Purple 5 - Union 2'}
   ];
 }]).
 

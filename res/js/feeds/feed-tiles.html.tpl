@@ -14,6 +14,29 @@
   </div>
     </a>
 
+    <a href="/#/scores">
+  <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 feed-tile"
+       style="background: url('/res/img/scores.png') no-repeat center center;">
+      <div class="feed-tile-loading" ng-show="false">
+      </div>
+      <div class="feed-tile-info">
+        <span class="feed-title-text">Scores</span>
+      </div>
+  </div>
+    </a>
+
+    <a href="/#/calendar">
+  <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 feed-tile"
+       style="background: url('/res/img/calendar.png') no-repeat center center;">
+      <div class="feed-tile-loading" ng-show="false">
+      </div>
+      <div class="feed-tile-info">
+        <span class="feed-title-text">Calendar</span>
+      </div>
+  </div>
+    </a>
+
+
   <div ng-repeat="f in feeds.infoArray | orderBy: 'name' track by $index"
        class="col-xs-6 col-sm-4 col-md-2 col-lg-2 feed-tile"
        title="{{ f.url }}"
