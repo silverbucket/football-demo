@@ -84,6 +84,49 @@
                 <td style="padding: 10px; border-bottom: 1px solid #ddd;">{{c.title}}</td>
                 <td style="padding: 10px; border-bottom: 1px solid #ddd;">{{c.number}}</td>
               </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </script>
+
+    <script type="text/ng-template" id="scores.html">
+      <div class="col-xs-12" ng-controller="scoresCtrl">
+        <div class="text">
+          <h2 class="text-header">Scores</h2>
+          <div class="text-content">
+            <table border="0" style="margin: 10px 0 0 -35px;">
+              <tr class="header"><th align="left">Date</th>
+                <th align="left">Time</th><th align="left">Game</th>
+                <th align="left">Results</th>
+              </tr>
+              <tr ng-repeat="s in scores" ng-class="{'even':$even, 'odd':$odd}">
+                <td class="date" style="padding: 10px; border-bottom: 1px solid #ddd;">{{s.date}}</td>
+                <td class="time" style="padding: 10px; border-bottom: 1px solid #ddd;">{{s.time}}</td>
+                <td class="game" style="font-weight: bold; padding: 10px; border-bottom: 1px solid #ddd;">{{s.game}}</td>
+                <td class="score" style="padding: 10px; border-bottom: 1px solid #ddd;">{{s.score}}</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </script>
+
+    <script type="text/ng-template" id="calendar.html">
+      <div class="col-xs-12" ng-controller="calendarCtrl">
+        <div class="text">
+          <h2 class="text-header">Scores</h2>
+          <div class="text-content">
+          <table border="0" style="margin: 10px 0 0 -35px;">
+              <tr class="header"><th align="left">Date</th>
+                <th align="left">Time</th><th align="left">Game</th>
+              </tr>
+              <tr ng-repeat="c in calendar" ng-class="{'even':$even, 'odd':$odd}">
+                <td class="date" style="padding: 10px; border-bottom: 1px solid #ddd;">{{c.date}}</td>
+                <td class="time" style="padding: 10px; border-bottom: 1px solid #ddd;">{{c.time}}</td>
+                <td class="game" style="font-weight: bold; padding: 10px; border-bottom: 1px solid #ddd;">{{c.game}}</td>
+              </tr>
+            </table>
           </div>
         </div>
       </div>
