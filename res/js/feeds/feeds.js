@@ -217,7 +217,7 @@ function ($q, SH, CH, RS, $rootScope, $sce) {
     // });
   }
 
-  
+
   func.getArticle = function (url) {
     var defer = $q.defer();
 
@@ -456,7 +456,7 @@ function ($q, SH, CH, RS, $rootScope, $sce) {
     //     timeout: false
     //   });
     //   data.state.remoteStorage = true;
-    // }); 
+    // });
   })();
 
   return {
@@ -593,7 +593,7 @@ function ($scope, Feeds, $rootScope, $timeout, $routeParams) {
     Feeds.data.current.name = '';
     Feeds.data.current.indexes.length = 0;
   }
-  
+
   // $scope.$watch('Feeds.data.info[feed].loaded', function (val1, val2) {
   //   if (feed) {
   //     console.log('FEED LOADED! '+val1+'-'+val2+' ['+Feeds.data.info[feed].loaded+']');
@@ -782,7 +782,7 @@ function (isSelected, Feeds, $location, $filter) {
         //   backdrop: false
         // });
       }
-      
+
     }
 
     $scope.getNextUrl = function (a) {
