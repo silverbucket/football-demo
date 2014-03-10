@@ -12,6 +12,7 @@
     <!-- endbuild -->
     <!-- build:css /res/css/app.min.css -->
     <link rel="stylesheet" href="/res/css/main.css?v=0.2.8" />
+    <link rel="stylesheet" href="/vendor/guppy-irc/guppy-irc.css?v=20140310" />
     <!-- endbuild -->
   </head>
 
@@ -42,7 +43,23 @@
 
 
         <div class="content-container" ng-view></div>
-
+        <guppy-irc id="myGuppy"
+             data-title="Frozen Penguins Chat"
+             data-height="280"
+             data-server="irc.freenode.net"
+             data-channel="#frozenpenguins"
+             data-nick="frozenp"
+             data-enable-nick-change="true"
+             data-enable-history="false"
+             data-enable-user-list="true"
+             data-display-name="Frozen Penguin"
+             data-password=""
+             data-autoconnect="true"
+             data-sockethub-host="silverbucket.net"
+             data-sockethub-port="443"
+             data-sockethub-tls="true"
+             data-sockethub-path="/sockethub"
+             data-sockethub-secret="1234567890" />
       </div>
       </div>
     </div>
@@ -179,6 +196,7 @@
     <script src="/res/js/dogfeed.js?v=0.2.8"></script>
     <script src="/res/js/directives/misc.js?v=0.2.8"></script>
     <script src="/vendor/moment.min.js?v=2.5.1"></script>
+    <script src="/vendor/guppy-irc/guppy-irc.js?v=20140310"></script>
     <!-- endbuild -->
   </body>
 </html>
