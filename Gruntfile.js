@@ -14,6 +14,7 @@ module.exports = function(grunt) {
               'res/js/feeds/feeds.js',
               'res/js/directives/misc.js',
               'vendor/moment.min.js',
+              'vendor/guppy-irc/guppy-irc.js',
               'vendor/angular-shared/ngRemoteStorage.js',
               'vendor/angular-shared/ngCommandQueue.js',
               'vendor/angular-shared/ngMessages.js',
@@ -31,7 +32,8 @@ module.exports = function(grunt) {
         dest: 'build/sockethub-client.js.tmp'
       },
       css: {
-        src: ['res/**/*.css'],
+        src: ['res/**/*.css',
+              'vendor/guppy-irc/guppy-irc.css'],
         dest: 'build/app.css.tmp'
       }
     },
