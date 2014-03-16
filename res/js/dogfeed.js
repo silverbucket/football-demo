@@ -4,7 +4,8 @@ angular.module('dogfeed', [
     'ngSockethubRemoteStorage',
     'ngRemoteStorage',
     'ngMessages',
-    'ngRoute'
+    'ngRoute',
+    'ngTouch'
 ]).
 
 /**
@@ -157,7 +158,7 @@ filter('fromNow', [
 function() {
   return function (dateString) {
     //console.log("FROMNOW: " + moment(new Date(dateString)).fromNow());
-    //return new Date(dateString).toDateString(); 
+    //return new Date(dateString).toDateString();
     return moment(new Date(dateString)).fromNow();
   };
 }]).
