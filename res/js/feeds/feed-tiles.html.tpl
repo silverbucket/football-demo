@@ -3,6 +3,8 @@
     <p>no feeds yet, add some!</p>
   </div><!--/span-->
 
+  <div class="col-xs-0 col-sm-2 col-md-3 col-lg-3"></div>
+
     <a href="/#/contacts">
   <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 feed-tile"
        style="background: url('/res/img/contacts.png') no-repeat center center;">
@@ -64,4 +66,5 @@
     </div>
   </div><!--/span-->
 
+  <div class="col-xs-0 col-sm-1 col-md-2 col-lg-2"></div>
 </div><!--/row-->
