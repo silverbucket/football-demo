@@ -18,8 +18,8 @@
       </div>
 
       <div class="article"
-           ng-swipe-left="viewArticle(article, 'prev')"
-           ng-swpe-right="viewArticle(article, 'next')">
+           ng-swipe-left="viewArticle(article, 'next')"
+           ng-swpe-right="viewArticle(article, 'prev')">
         <h2>{{ article.title }}</h2>
         <div class="article-body" data-ng-bind-html="article.brief_html"></div>
         <div ng-repeat="m in article.media"
